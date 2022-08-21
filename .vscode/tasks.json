@@ -1,0 +1,12 @@
+{
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build"
+            ]
+        }
+    ]
+}
