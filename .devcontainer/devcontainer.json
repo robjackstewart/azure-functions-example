@@ -1,0 +1,17 @@
+{
+    "dockerComposeFile": "./docker-compose.yaml",
+    "service": "dev",
+    "workspaceFolder": "/workspace",
+    "shutdownAction": "stopCompose",
+    "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+    "overrideCommand": true,
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-azurefunctions",
+                "ms-dotnettools.csharp",
+                "eamodio.gitlens"
+            ]
+        }
+    }
+}
