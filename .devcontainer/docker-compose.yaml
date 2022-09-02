@@ -5,9 +5,12 @@ services:
     container_name: azure-functions-example-dev-environment
     volumes:
       - ../:/workspace
-  storage-emulator:
+  azurite:
     image: mcr.microsoft.com/azure-storage/azurite
-    container_name: azure-functions-example-storage-emulator
+    container_name: "azurite"
+    hostname: azurite
     restart: unless-stopped
-    volumes:
-      - /workspace
+    ports:
+      - "10000:10000"
+      - "10001:10001"
+      - "10002:10002" 
