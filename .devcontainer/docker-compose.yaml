@@ -16,3 +16,13 @@ services:
       - 10002:10002
     volumes:
       - /data
+  
+  database:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: Password123+
+    volumes:
+      - /var/lib/postgresql/data
+    ports:
+      - 5432:5432
