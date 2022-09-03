@@ -6,7 +6,10 @@
             "type": "shell",
             "args": [
                 "build"
-            ]
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
         }
     ]
 }
