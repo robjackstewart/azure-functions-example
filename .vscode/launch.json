@@ -6,8 +6,11 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/src/Example.Functions/bin/Debug/net6.0/Example.Functions.dll",
-            "args": [],
+            "program": "func",
+            "args": [
+                "start",
+                "--verbose"
+            ],
             "cwd": "${workspaceFolder}/src/Example.Functions",
             "console": "internalConsole",
             "stopAtEntry": false
